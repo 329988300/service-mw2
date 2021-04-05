@@ -4,11 +4,11 @@ import { ConnectionOptions } from 'typeorm';
 // 数据库配置
 export const orm: ConnectionOptions = {
   type: 'mysql',
-  host: '192.168.11.152',
+  host: '127.0.0.1',
   port: 3306,
-  username: 'homestead',
-  password: 'secret',
-  database: 'shop_development',
+  username: 'root',
+  password: '12345678',
+  database: 'vv',
   synchronize: false,
   logging: true,
 };
@@ -17,8 +17,8 @@ export const orm: ConnectionOptions = {
 export const redis: EggRedisOptions = {
   client: {
     port: 6379, // Redis port
-    host: '192.168.11.152', // Redis host
-    password: '',
+    host: '127.0.0.1', // Redis host
+    password: '123456',
     db: 0,
   },
 };
